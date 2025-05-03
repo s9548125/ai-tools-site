@@ -40,6 +40,7 @@ h1 {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 .card-header {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +72,15 @@ h1 {
     object-fit: contain;
 }
 .tool-card p {
-    margin: 6px 0;
+    margin: 4px 0;
     font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 @media screen and (max-width: 1024px) {
     .tool-container {
@@ -86,86 +91,4 @@ h1 {
     .tool-card {
         width: 100%;
     }
-}
-
-img.scale-up {
-    transform: scale(1.2);
-}
-
-.logo-box.scale-up-box {
-    width: 80px;
-    height: 64px;
-}
-
-
-.tool-card img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-img.scale-up {
-    transform: scale(1.2);
-}
-
-img.scale-up-slight {
-    transform: scale(1.1);
-}
-
-.search-container {
-    text-align: center;
-    margin: 20px auto 30px;
-}
-#searchBox {
-    width: 60%;
-    max-width: 400px;
-    padding: 10px 16px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.site-footer {
-    text-align: center;
-    font-size: 13px;
-    color: #888;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-
-
-@media (max-width: 600px) {
-    .tool-card {
-        width: 90%;
-    }
-}
-
-#clearBtn {
-    margin-left: 10px;
-    padding: 8px 14px;
-    font-size: 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-#clearBtn:hover {
-    background-color: #0056b3;
-}
-.logo-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-.logo-title img {
-    width: 48px;
-    height: 48px;
 }
