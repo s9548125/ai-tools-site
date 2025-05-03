@@ -13,7 +13,7 @@ h1 {
 }
 .tool-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
     justify-items: center;
 }
@@ -55,16 +55,16 @@ h1 {
     width: 100%;
 }
 
-/* 手機版樣式：單欄顯示、加大字體與寬度 */
-@media screen and (max-width: 768px) {
+/* 手機版：2 欄並排，卡片寬度接近 48%，每屏顯示 4 張卡片 */
+@media screen and (max-width: 1024px) {
     .tool-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
     .tool-card {
-        width: 90%;
-        height: auto;
-        padding: 20px;
+        width: 100%;
+        height: 300px;
+        padding: 16px;
     }
     .tool-card p {
         font-size: 15px;
