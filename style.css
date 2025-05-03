@@ -19,9 +19,9 @@ h1 {
 }
 .tool-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
-    justify-items: center;
+    justify-items: stretch;
 }
 .tool-card {
     display: flex;
