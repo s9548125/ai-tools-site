@@ -32,12 +32,12 @@ h1 {
 }
 
 .tool-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    justify-items: center;
 }
 .tool-card {
-    width: 300px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 260px;
 }
