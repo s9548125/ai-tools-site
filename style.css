@@ -21,7 +21,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
-    justify-items: stretch;
+    justify-items: center;
 }
 .tool-card {
     display: flex;
@@ -30,7 +30,6 @@ h1 {
     border-radius: 12px;
     padding: 20px;
     width: 100%;
-    min-height: 300px;
     height: auto;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     box-sizing: border-box;
