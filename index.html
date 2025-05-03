@@ -12,7 +12,6 @@
         <input type="text" id="searchBox" placeholder="搜尋 AI 工具..." onkeyup="filterCards()">
     </div>
     <div class="tool-container">
-
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -28,7 +27,6 @@
             <p><strong>個人體驗：</strong>反應快好用</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐⭐</p>
         </div>
-    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -44,7 +42,6 @@
             <p><strong>個人體驗：</strong>風格超有感</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
-    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -60,7 +57,6 @@
             <p><strong>個人體驗：</strong>操作很直覺</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
-    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -76,7 +72,6 @@
             <p><strong>個人體驗：</strong>速度快但要校對</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐</p>
         </div>
-    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -92,46 +87,19 @@
             <p><strong>個人體驗：</strong>簡單易上手</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
-    
     </div>
-
-    
-
-    
-
-
-<footer class="site-footer">
-    更新時間：2025/05/03
-</footer>
 </body>
-
-
-
 </html>
-
 <script>
 function filterCards() {
     const input = document.getElementById('searchBox');
     const filter = input.value.toLowerCase();
     const cards = document.querySelectorAll('.tool-card');
-
     cards.forEach(card => {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(filter) ? "flex" : "none";
     });
 }
 </script>
-
-    
-
-    
-
-
-<footer class="site-footer">
-    更新時間：2025/05/03
-</footer>
 </body>
-
-
-
 </html>
