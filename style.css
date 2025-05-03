@@ -71,11 +71,12 @@ h1 {
     object-fit: contain;
 }
 .tool-card p {
-    margin: 6px 0;
-    font-size: 13px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 2px 0;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 @media screen and (max-width: 1024px) {
     .tool-container {
@@ -135,26 +136,14 @@ img.scale-up-slight {
     margin-bottom: 20px;
 }
 
-
-
-@media (max-width: 600px) {
-    .tool-card {
-        width: 90%;
-    }
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
 }
-
-#clearBtn {
-    margin-left: 10px;
-    padding: 8px 14px;
-    font-size: 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-#clearBtn:hover {
-    background-color: #0056b3;
+.logo-title img {
+    width: 48px;
+    height: 48px;
 }

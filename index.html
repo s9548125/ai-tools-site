@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <title>AI 工具索引</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AI 工具索引網站</h1>
-<p class="subtitle">不用問 ChatGPT，要用什麼看這裡就對了 😎</p>
+    <div class="logo-title"><img src="logo.png" alt="logo"><h1>AI 工具索引網站</h1></div>
     <div class="search-container">
-        <input type="text" id="searchBox" onkeyup="filterCards()">
-        <button id="clearBtn" onclick="clearSearch()">清除搜尋</button placeholder="搜尋 AI 工具..." onkeyup="filterCards()">
+        <input type="text" id="searchBox" placeholder="搜尋 AI 工具..." onkeyup="filterCards()">
     </div>
     <div class="tool-container">
+
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -29,6 +29,7 @@
             <p><strong>個人體驗：</strong>反應快好用</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐⭐</p>
         </div>
+    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -44,6 +45,7 @@
             <p><strong>個人體驗：</strong>風格超有感</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
+    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -59,6 +61,7 @@
             <p><strong>個人體驗：</strong>操作很直覺</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
+    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -74,6 +77,7 @@
             <p><strong>個人體驗：</strong>速度快但要校對</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐</p>
         </div>
+    
         <div class="tool-card">
             <div class="card-header">
                 <div class="logo-box">
@@ -89,28 +93,46 @@
             <p><strong>個人體驗：</strong>簡單易上手</p>
             <p><strong>主觀評分：</strong>⭐⭐⭐⭐</p>
         </div>
+    
     </div>
+
+    
+
+    
+
+
+<footer class="site-footer">
+    更新時間：2025/05/03
+</footer>
+</body>
+
+
+
+</html>
 
 <script>
 function filterCards() {
     const input = document.getElementById('searchBox');
     const filter = input.value.toLowerCase();
     const cards = document.querySelectorAll('.tool-card');
+
     cards.forEach(card => {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(filter) ? "flex" : "none";
     });
 }
-
-function clearSearch() {
-    const input = document.getElementById('searchBox');
-    input.value = "";
-    filterCards();
-}
 </script>
+
+    
+
+    
+
 
 <footer class="site-footer">
     更新時間：2025/05/03
 </footer>
 </body>
+
+
+
 </html>
