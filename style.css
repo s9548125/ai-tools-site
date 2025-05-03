@@ -56,17 +56,17 @@ h1 {
     width: 100%;
 }
 
-/* 手機版：強制每行 2 欄 */
+/* 手機版：每行只顯示一張卡片（單欄） */
 @media screen and (max-width: 1024px) {
     .tool-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 16px;
     }
     .tool-card {
         width: 100%;
-        padding: 16px;
+        padding: 20px;
     }
     .tool-card p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
