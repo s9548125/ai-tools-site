@@ -2,7 +2,7 @@
 body {
     font-family: 'Noto Sans TC', sans-serif;
     margin: 20px auto;
-    max-width: 1100px;
+    max-width: 1150px;
     background-color: #f8f9fa;
     padding: 20px;
 }
@@ -29,8 +29,8 @@ h1 {
     background: #fff;
     border-radius: 12px;
     padding: 16px;
-    width: 190px;
-    height: 260px;
+    width: 220px;
+    height: auto;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     box-sizing: border-box;
     transition: 0.3s ease;
@@ -73,12 +73,11 @@ h1 {
 }
 .tool-card p {
     margin: 2px 0;
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 @media screen and (max-width: 1024px) {
     .tool-container {
@@ -88,11 +87,5 @@ h1 {
     }
     .tool-card {
         width: 100%;
-        height: auto;
-    }
-    .tool-card p {
-        font-size: 16px;
-        white-space: normal;
-        text-overflow: initial;
     }
 }
