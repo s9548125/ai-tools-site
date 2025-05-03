@@ -1,0 +1,32 @@
+
+body {
+    font-family: sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.tool-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.tool-card img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.tool-card h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #444;
+}
+.tool-card p {
+    margin: 4px 0;
+}
