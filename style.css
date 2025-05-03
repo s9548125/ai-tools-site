@@ -51,3 +51,44 @@ footer {
   background: #eee;
   font-size: 0.9em;
 }
+
+
+/* 卡片優化 */
+.tool-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tool-card p {
+  margin: 4px 0;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.tool-card h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.tool-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background-color: white;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+}
