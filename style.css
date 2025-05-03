@@ -135,18 +135,26 @@ img.scale-up-slight {
     margin-bottom: 20px;
 }
 
-#clearBtn {
-    margin-left: 10px;
-    padding: 8px 14px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #f2f2f2;
-}
+
 
 @media (max-width: 600px) {
     .tool-card {
         width: 90%;
     }
+}
+
+#clearBtn {
+    margin-left: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#clearBtn:hover {
+    background-color: #0056b3;
 }
