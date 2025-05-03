@@ -67,6 +67,7 @@ h1 {
     overflow: hidden;
 }
 .tool-card img {
+    margin-bottom: 12px;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -97,9 +98,4 @@ img.scale-up {
 .logo-box.scale-up-box {
     width: 80px;
     height: 64px;
-}
-
-
-img.scale-down {
-    transform: scale(0.7);
 }
