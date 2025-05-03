@@ -47,7 +47,6 @@ h1 {
     justify-content: center;
     height: 100px;
     text-align: center;
-    margin-bottom: 10px; /* ✅ 增加名稱與簡介間距 */
 }
 .card-header h2 {
     font-size: 16px;
@@ -68,20 +67,17 @@ h1 {
     overflow: hidden;
 }
 .tool-card img {
-    width: auto;
-    height: auto;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 .tool-card p {
-    margin: 4px 0;
-    font-size: 13px;
+    margin: 2px 0;
+    font-size: 14px;
     text-align: left;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 @media screen and (max-width: 1024px) {
     .tool-container {
@@ -92,26 +88,4 @@ h1 {
     .tool-card {
         width: 100%;
     }
-}
-img.scale-up {
-    transform: scale(1.2);
-}
-.logo-box.scale-up-box {
-    width: 80px;
-    height: 64px;
-}
-img.scale-up-slight {
-    max-height: 64px;
-    transform: scale(1.1);
-}
-
-
-.tool-title {
-    font-size: 16px;
-    margin: 6px 0 0 0;
-    color: #444;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 100%;
 }
