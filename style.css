@@ -89,12 +89,3 @@ h1 {
         width: 100%;
     }
 }
-
-img.scale-up {
-    transform: scale(1.2);
-}
-
-.logo-box.scale-up-box {
-    width: 80px;
-    height: 64px;
-}
