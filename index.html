@@ -9,7 +9,8 @@
 <body>
     <h1>AI 工具索引網站</h1>
     <div class="search-container">
-        <input type="text" id="searchBox" placeholder="搜尋 AI 工具..." onkeyup="filterCards()">
+        <input type="text" id="searchBox">
+        <button id="clearBtn" onclick="clearSearch()">清除搜尋</button placeholder="搜尋 AI 工具..." onkeyup="filterCards()">
     </div>
     <div class="tool-container">
         <div class="tool-card">
@@ -98,6 +99,12 @@ function filterCards() {
         const text = card.textContent.toLowerCase();
         card.style.display = text.includes(filter) ? "flex" : "none";
     });
+}
+
+function clearSearch() {
+    const input = document.getElementById('searchBox');
+    input.value = "";
+    filterCards();
 }
 </script>
 
