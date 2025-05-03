@@ -55,10 +55,10 @@ h1 {
     width: 100%;
 }
 
-/* 手機版：2 欄並排，卡片寬度接近 48%，每屏顯示 4 張卡片 */
+/* 手機版：強制每行 2 欄、卡片高度約為 300px，達成 2x2 */
 @media screen and (max-width: 1024px) {
     .tool-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
     .tool-card {
