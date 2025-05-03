@@ -51,12 +51,12 @@ h1 {
 .tool-card img {
     display: block;
     margin: 0 auto 6px auto;
-    max-width: 64px;
     max-height: 64px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    padding: 4px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
     background: #fff;
+    padding: 4px;
 }
 .tool-card h2 {
     margin: 4px 0;
