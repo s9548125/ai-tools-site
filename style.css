@@ -55,17 +55,18 @@ h1 {
     width: 100%;
 }
 
-/* 手機版樣式 */
+/* 手機版樣式：單欄顯示、加大字體與寬度 */
 @media screen and (max-width: 768px) {
     .tool-container {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 16px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     .tool-card {
+        width: 90%;
         height: auto;
-        padding: 16px;
+        padding: 20px;
     }
     .tool-card p {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
