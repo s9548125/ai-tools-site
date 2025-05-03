@@ -20,8 +20,6 @@ h1 {
 .tool-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
     background: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -35,16 +33,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110px;
     justify-content: center;
+    height: 110px;
+    text-align: center;
 }
 .tool-card img {
+    display: block;
+    margin: 0 auto 6px auto;
     max-width: 70px;
     max-height: 70px;
-    margin-bottom: 6px;
 }
 .tool-card h2 {
-    text-align: center;
     margin: 4px 0;
     color: #444;
     font-size: 18px;
