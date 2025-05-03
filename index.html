@@ -1,63 +1,62 @@
-
 <!DOCTYPE html>
-
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AI 工具索引</title>
-<link href="style.css" rel="stylesheet"/>
-<style>
-    .tool-card p {
-      margin: 6px 0;
-      line-height: 1.5;
-      text-align: left;
-    }
-    .tool-card h2 {
-      margin-bottom: 10px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI 工具索引</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<h1>AI 工具索引</h1>
-<input id="searchInput" placeholder="搜尋工具名稱..." type="text"/>
-</header>
-<main id="toolContainer">
-<div class="tool-card" data-name="ChatGPT">
-<a href="https://chat.openai.com" target="_blank">
-<img alt="ChatGPT" src="chatgpt.png"/>
-</a>
-<h2>ChatGPT</h2>
-<p>簡介：對話式 AI，用於問答與寫作</p><p>用途：寫作、翻譯、教學</p><p>類別：文字生成</p><p>是否免費：✅ 是</p><p>支援語言：繁中、英文</p><p>適用對象：學生、上班族、客服人員</p><p>個人體驗：介面直覺、反應快</p><p>主觀評分：⭐️⭐️⭐️⭐️⭐️</p></div>
-<div class="tool-card" data-name="Midjourney">
-<a href="https://www.midjourney.com" target="_blank">
-<img alt="Midjourney" src="midjourney.png"/>
-</a>
-<h2>Midjourney</h2>
-<p>簡介：藝術風格圖像生成 AI</p><p>用途：插畫、角色設計</p><p>類別：圖像生成</p><p>是否免費：❌ 否</p><p>支援語言：英文</p><p>適用對象：設計師、創作者</p><p>個人體驗：品質高但門檻稍高</p><p>主觀評分：⭐️⭐️⭐️⭐️☆</p></div>
-<div class="tool-card" data-name="Runway ML">
-<a href="https://runwayml.com" target="_blank">
-<img alt="Runway ML" src="runway.png"/>
-</a>
-<h2>Runway ML</h2>
-<p>簡介：影片生成與剪輯平台</p><p>用途：去背、影片編輯</p><p>類別：影片工具</p><p>是否免費：🟡 部分免費</p><p>支援語言：英文</p><p>適用對象：剪輯師、創作者</p><p>個人體驗：功能多但有延遲</p><p>主觀評分：⭐️⭐️⭐️⭐️☆</p></div>
-<div class="tool-card" data-name="Writesonic">
-<a href="https://writesonic.com" target="_blank">
-<img alt="Writesonic" src="writesonic.png"/>
-</a>
-<h2>Writesonic</h2>
-<p>簡介：AI 多語文案工具</p><p>用途：商品文案、SEO</p><p>類別：文字生成</p><p>是否免費：🟡 部分免費</p><p>支援語言：繁中、英文等</p><p>適用對象：行銷人員、部落客</p><p>個人體驗：模板豐富，效率高</p><p>主觀評分：⭐️⭐️⭐️⭐️☆</p></div>
-<div class="tool-card" data-name="Pictory">
-<a href="https://pictory.ai" target="_blank">
-<img alt="Pictory" src="pictory.png"/>
-</a>
-<h2>Pictory</h2>
-<p>簡介：影片摘要與剪輯 AI</p><p>用途：影片摘要、轉換短片</p><p>類別：影片工具</p><p>是否免費：🟡 部分免費</p><p>支援語言：英文</p><p>適用對象：社群剪輯者</p><p>個人體驗：簡單實用但需付費</p><p>主觀評分：⭐️⭐️⭐️☆☆</p></div>
-</main>
-<footer>
-<p>© 2025 AI 工具索引網站</p>
-</footer>
-<script src="script.js"></script>
+  <h1>AI 工具索引</h1>
+  <input type="text" id="searchInput" placeholder="搜尋工具名稱..." />
+  
+  <div id="filter-buttons">
+    <button onclick="filterCategory('all')">全部</button>
+    <button onclick="filterCategory('文字生成')">🔠 文字生成</button>
+    <button onclick="filterCategory('圖像生成')">🎨 圖像生成</button>
+    <button onclick="filterCategory('影片工具')">🎬 影片工具</button>
+  </div>
+
+  <div id="toolCards" class="card-container">
+    <div class="card" data-category="文字生成">
+      <img src="chatgpt.png" alt="ChatGPT logo" />
+      <h2>ChatGPT</h2>
+      <p><strong>簡介：</strong>對話式 AI，用於問答與寫作</p>
+      <p><strong>用途：</strong>寫作、翻譯、教學</p>
+      <p><strong>類別：</strong>文字生成</p>
+      <p><strong>是否免費：</strong>✅ 是</p>
+      <p><strong>支援語言：</strong>繁中、英文</p>
+      <p><strong>適用對象：</strong>學生、上班族、客服人員</p>
+      <p><strong>個人體驗：</strong>介面直覺、反應快</p>
+      <p><strong>主觀評分：</strong>⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="card" data-category="圖像生成">
+      <img src="midjourney.png" alt="Midjourney logo" />
+      <h2>Midjourney</h2>
+      <p><strong>簡介：</strong>藝術風格圖像生成 AI</p>
+      <p><strong>用途：</strong>插畫、角色設計</p>
+      <p><strong>類別：</strong>圖像生成</p>
+      <p><strong>是否免費：</strong>❌ 否</p>
+      <p><strong>支援語言：</strong>英文</p>
+      <p><strong>適用對象：</strong>設計師、創作者</p>
+      <p><strong>個人體驗：</strong>品質高但門檻稍高</p>
+      <p><strong>主觀評分：</strong>⭐⭐⭐⭐☆</p>
+    </div>
+    <div class="card" data-category="影片工具">
+      <img src="runway.png" alt="Runway logo" />
+      <h2>Runway ML</h2>
+      <p><strong>簡介：</strong>影片生成與剪輯平台</p>
+      <p><strong>用途：</strong>去背、影片編輯</p>
+      <p><strong>類別：</strong>影片工具</p>
+      <p><strong>是否免費：</strong>🟡 部分免費</p>
+      <p><strong>支援語言：</strong>英文</p>
+      <p><strong>適用對象：</strong>剪輯師、創作者</p>
+      <p><strong>個人體驗：</strong>功能多但有延遲</p>
+      <p><strong>主觀評分：</strong>⭐⭐⭐⭐☆</p>
+    </div>
+  </div>
+
+  <footer>© 2025 AI 工具索引網站</footer>
+  <script src="script.js"></script>
 </body>
 </html>
