@@ -89,3 +89,7 @@ h1 {
         width: 100%;
     }
 }
+
+img.scale-up {
+    transform: scale(1.2);
+}
