@@ -37,6 +37,11 @@ main {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  background-color: white;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 footer {
   text-align: center;
