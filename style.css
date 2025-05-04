@@ -161,12 +161,13 @@ img.scale-up-slight {
 .logo-title {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     gap: 12px;
     margin-bottom: 10px;
 }
 .logo-title img {
     width: 48px;
-    display: block;
     height: 48px;
+
+    margin-top: 4px;
 }
